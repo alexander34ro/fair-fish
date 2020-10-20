@@ -85,7 +85,7 @@ body {
 
 header {
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   background-color: white;
   display: flex;
   align-items: center;
@@ -96,11 +96,12 @@ header {
 }
 
 header #logo {
-  width: 64px;
+  width: 3rem;
 }
 
 header .fa-bars {
-  font-size: 48px;
+  font-size: 2rem;
+  color: #666;
 }
 
 .container {
@@ -115,5 +116,13 @@ header .fa-bars {
 
 .container .main-image {
   border-radius: 100%;
-  padding: 2rem;
+  padding: 2rem 4rem;
+}
+
+.details {
+  margin-top: 2rem;
+}
+
+section {
+  padding: 1rem;
 }
