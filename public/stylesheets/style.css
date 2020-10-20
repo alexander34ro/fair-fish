@@ -90,9 +90,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -webkit-box-shadow: 0px 2px 8px -2px rgba(51,51,51,0.5);
+  -moz-box-shadow: 0px 2px 8px -2px rgba(51,51,51,0.5);
+  box-shadow: 0px 2px 8px -2px rgba(51,51,51,0.5);
 }
 
-#logo {
+header #logo {
   width: 64px;
 }
 
@@ -102,6 +105,8 @@ header .fa-bars {
 
 .container {
   padding: 1rem;
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
 .container h1 {
