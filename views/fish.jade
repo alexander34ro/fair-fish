@@ -2,18 +2,25 @@ extends layout
 
 block content
   .container
-    img.main-image(src="/images/fairfish_placeholder.jpg" alt="FairFish Salmon")
-    h1= title
+    img.main-image(src="/images/fish/#{title}.jpg" alt="FairFish Salmon")
+    h1
+      span.emph Fish:
+      span.value= title
+
+    .fairness
+      section
+        span The fairness of your fish:
+        .meter
 
     .details
       section
-        h3 Region
-        p Lorem ipsum
+        span.emph Location:
+        span.value Barents Sea
 
       section
-        h3 Age
-        p Consectetur adipiscing
+        span.emph Risk of:
+        span.value Oilspills
 
       section
-        h3 Chance of polution
-        p Dolor sit amet
+        span.emph Risk of:
+        span.value Pollution

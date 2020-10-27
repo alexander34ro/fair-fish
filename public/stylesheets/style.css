@@ -111,10 +111,26 @@ header #logo {
   padding: 2rem 4rem;
 }
 
-.details {
+section {
+  padding: 1rem;
+  text-align: center;
+}
+
+.container .emph {
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  color: #3BAFE0;
+  font-weight: 600;
+}
+
+.container .value {
+  text-transform: capitalize;
+}
+
+.fairness {
   margin-top: 2rem;
 }
 
-section {
-  padding: 1rem;
+.details {
+  margin-top: 2rem;
 }
