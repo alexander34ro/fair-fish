@@ -37,6 +37,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.25rem;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -90,6 +91,7 @@ body {
 header {
   width: 100%;
   padding: 2rem;
+  padding-bottom: 0;
 }
 
 header #logo {
@@ -125,10 +127,21 @@ section {
 
 .container .value {
   text-transform: capitalize;
+  font-weight: 200;
 }
 
 .fairness {
   margin-top: 2rem;
+}
+
+.meter {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.meter img {
+  margin: 5px;
 }
 
 .details {
