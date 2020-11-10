@@ -1,8 +1,9 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const mongoose = require("mongoose");
 
 var indexRouter = require('./routes/index');
 var fishRouter = require('./routes/fish.js');
@@ -18,6 +19,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// db setup
+mongoose.connect(
+  'mongodb+srv://admin:thefishisfair@cluster0.sua0j.mongodb.net/Fish?retryWrites=true&w=majority',
+  { useNewUrlParser: true, useUnifiedTopology: true }
+);
 
 app.use('/', indexRouter);
 app.use('/fish', fishRouter);
