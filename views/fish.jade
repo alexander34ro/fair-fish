@@ -2,7 +2,7 @@ extends layout
 
 block content
   .container
-    img.main-image(src="/images/fish/#{title}.jpg" alt="FairFish Salmon")
+    img.main-image(src="/images/fish/#{title}1.png" alt="FairFish Salmon")
     h1
       span.emph Fish:
       span.value= title
@@ -21,7 +21,7 @@ block content
       section
         span.emph Location:
         span.value Barents Sea
-      .map https://www.google.com/maps/@55.659635,12.5887693,17z
+        iframe(src='https://maps.google.com/maps?q=' + location + '&t=&z=5&ie=UTF8&iwloc=&output=embed' frameborder='0' style='border:0; height:320px; width:100%; margin-top:2rem;' allowfullscreen='' aria-hidden='false' tabindex='0')
 
       section
         span.emph Risk of:
@@ -42,5 +42,4 @@ block content
       br
       br
       section
-        span WFHO recommends to buy fish below 50% Pollution. Information from the World Fish Health Organiztion.
-        span Info about where the data comes from. Our data comes from: www.pollutiondata.eu/oceanwaters.
+        span(style="font-size:14px;") WFHO recommends to buy fish below 50% Pollution. Information from the World Fish Health Organiztion. Info about where the data comes from. Our data comes from: www.pollutiondata.eu/oceanwaters.

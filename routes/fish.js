@@ -9,7 +9,7 @@ router.get('/:name', function (req, res, next) {
     let rating = [];
     for (let i = 0; i < fish.rating; i++) rating.push(1);
     for (let i = fish.rating; i < 5; i++) rating.push(0);
-    res.render('fish', { title: fish.name, rating: rating, risk: fish.risk });
+    res.render('fish', { title: fish.name, location: fish.location, rating: rating, risk: fish.risk });
   }).catch(err => {
     res.status(500).json({ err });
   });
