@@ -11,37 +11,36 @@ block content
       section
         span.value The fairness of your fish:
         .meter
-          img(src="/images/star_full.png" alt="Full star")
-          img(src="/images/star_full.png" alt="Full star")
-          img(src="/images/star_full.png" alt="Full star")
-          img(src="/images/star_empty.png" alt="Empty star")
-          img(src="/images/star_empty.png" alt="Empty star")
+          each val in rating
+            if val == 1
+              img(src="/images/star_full.png" alt="Full star")
+            else
+              img(src="/images/star_empty.png" alt="Empty star")
 
     .details
       section
         span.emph Location:
         span.value Barents Sea
-
-      section
-        span.emph Risk of:
-        span.value Oilspills
-        .risk-chart
-          .chart-value 45%
-          .w3-white.w3-round
-            .w3-container.w3-round.w3-blue(style='width:45%')
+      .map https://www.google.com/maps/@55.659635,12.5887693,17z
 
       section
         span.emph Risk of:
         span.value Contaminants
         .risk-chart
-          .chart-value 20%
+          .chart-value= risk.contaminants + '%'
           .w3-white.w3-round
-            .w3-container.w3-round.w3-blue(style='width:20%')
+            .w3-container.w3-round.w3-blue(style='width:40%')
 
       section
         span.emph Risk of:
-        span.value Waste
+        span.value Litter
         .risk-chart
-          .chart-value 15%
+          .chart-value= risk.litter + '%'
           .w3-white.w3-round
             .w3-container.w3-round.w3-blue(style='width:15%')
+
+      br
+      br
+      section
+        span WFHO recommends to buy fish below 50% Pollution. Information from the World Fish Health Organiztion.
+        span Info about where the data comes from. Our data comes from: www.pollutiondata.eu/oceanwaters.

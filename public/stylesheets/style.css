@@ -152,13 +152,13 @@ section {
 }
 
 .risk-chart .chart-value {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
   font-weight: 300;
 }
 
 .risk-chart .w3-container {
-  padding: 1rem 0;
+  padding: 0.75rem 0;
 }
 
 .risk-chart .w3-round {
