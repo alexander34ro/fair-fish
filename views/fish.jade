@@ -15,6 +15,7 @@ block content
           img(src="/images/star_full.png" alt="Full star")
           img(src="/images/star_full.png" alt="Full star")
           img(src="/images/star_empty.png" alt="Empty star")
+          img(src="/images/star_empty.png" alt="Empty star")
 
     .details
       section
@@ -24,7 +25,23 @@ block content
       section
         span.emph Risk of:
         span.value Oilspills
+        .risk-chart
+          .chart-value 45%
+          .w3-white.w3-round
+            .w3-container.w3-round.w3-blue(style='width:45%')
 
       section
         span.emph Risk of:
-        span.value Pollution
+        span.value Contaminants
+        .risk-chart
+          .chart-value 20%
+          .w3-white.w3-round
+            .w3-container.w3-round.w3-blue(style='width:20%')
+
+      section
+        span.emph Risk of:
+        span.value Waste
+        .risk-chart
+          .chart-value 15%
+          .w3-white.w3-round
+            .w3-container.w3-round.w3-blue(style='width:15%')
